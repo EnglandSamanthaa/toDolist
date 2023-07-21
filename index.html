@@ -7,9 +7,35 @@
     </head>
 
     <body>
-        <div class="container">
+        <div id="changeColorsContainer">
+            <div id="gradientOne">
+                <p class="listColors">
+                    <span class="darkColor"></span>
+                    <span class="lightColor"></span>
+                </p>
+            </div>
+            <div id="gradientTwo">
+                <p class="listColors">
+                    <span class="darkColor"></span>
+                    <span class="lightColor"></span>
+                </p>
+            </div>
+            <div id="gradientThree">
+                <p class="listColors">
+                    <span class="darkColor"></span>
+                    <span class="lightColor"></span>
+                </p>
+            </div>
+            <div id="gradientFour">
+                <p class="listColors">
+                    <span class="darkColor"></span>
+                    <span class="lightColor"></span>
+                </p>
+            </div>
+        </div>
 
-            <div class="toDoApp">
+        <div id="backgroundGradient" class="container">
+            <div id="toDoListHeader" class="toDoApp">
                 <div class="row">
                     <h2>To-Do List <img src="IMG/icons8-list-50.png"></h2>
                 </div>
@@ -27,7 +53,12 @@
             </div>
         </div>
 
+        <canvas id="homeScreenCanvas"></canvas>
+
+        <script src="js/particleBackground.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/theme.js"></script>
+
     </body>
 
 
