@@ -10,15 +10,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #9FB4C7, #7F7CAF, #28587B);
+    background-size: cover;
 }
 
 .toDoApp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
+    z-index: 2;
+    position: fixed;
+    bottom: 75%;
     height: 175px;
     width: 575px;
     background-color: #9FB798;
@@ -70,12 +70,13 @@
         
             }
     .listDiv{
+        position: fixed;
+        top: 24%;
         width: 575px;
-        margin-top: -20px;
+        min-height: 150px;
         border-radius: 0px 0px 10px 10px;
         border: solid 5px rgb(0, 0, 0);
         border-top: none;
-        padding-top: 20px;
         
     }
         ul{
@@ -83,6 +84,7 @@
             flex-direction: column;
             justify-content: space-around;
             width: 100%;
+            min-height: 150px;
             text-align: left;
             background-color: #EEEEFF;
             height: 99%;
@@ -99,6 +101,5 @@
                 cursor: pointer;
                 font-weight: 600;
                 padding: 10px;
-        
             }
              
