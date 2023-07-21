@@ -79,16 +79,23 @@
         border-top: none;
         
     }
+        #clearListContainer{
+            background-color: #EEEEFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: center;
+            height: 70px;
+        }
+   
         ul{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             width: 100%;
-            min-height: 150px;
+            min-height: 80px;
             text-align: left;
             background-color: #EEEEFF;
-            height: 99%;
-            padding: 30px;
 
         }
             ul li{
@@ -100,6 +107,6 @@
                 user-select: none;
                 cursor: pointer;
                 font-weight: 600;
-                padding: 10px;
+                padding: 10px 20px;
             }
-             
+            

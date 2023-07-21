@@ -1,6 +1,18 @@
 const inputBox = document.getElementById("inputBox");
 const listContainer = document.getElementById("listContainer");
 const addButton = document.getElementById("addButton");
+const clearListButton = document.getElementById("clearListButton");
+
+    clearListButton.style.height = '30px';
+    clearListButton.style.width = '30px';
+    clearListButton.style.margin = "15px";
+
+
+clearListButton.addEventListener("click", (event => { 
+    console.log(toDoItems);
+    emptyList();
+    console.log(toDoItems);
+}));
 
 class ToDoTask {
     constructor(task){
@@ -10,6 +22,11 @@ class ToDoTask {
 };
 
 const toDoItems = [];
+
+function emptyList(){
+    toDoItems.length = 0;
+    listContainer.innerHTML = '';
+}
 
 function updateToDoList(){
     while (listContainer.firstChild) {
