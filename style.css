@@ -185,7 +185,7 @@
         position: fixed;
         top: 24%;
         width: 575px;
-        min-height: 150px;
+        min-height: 115px;
         border-radius: 0px 0px 10px 10px;
         border: solid 5px rgb(0, 0, 0);
         border-top: none;
@@ -197,7 +197,7 @@
             flex-direction: row;
             justify-content: flex-end;
             align-content: center;
-            height: 70px;
+            height: 35px;
         }
    
         ul{
